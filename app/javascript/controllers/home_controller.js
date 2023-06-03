@@ -38,20 +38,24 @@ export default class extends Controller {
       })
     })
 
-    nameBox.forEach((name) => {
-      name.addEventListener("mouseover", () => {
-        mouseCursor.classList.add("cursor-grow")
-        for (let i = 0; i < nameBox.length; i++) {
-          nameBox[i].classList.add("hovered-card")
-        }
-      });
-      name.addEventListener("mouseleave", () => {
-        mouseCursor.classList.remove("cursor-grow")
-        for (let i = 0; i < nameBox.length; i++) {
-          nameBox[i].classList.remove("hovered-card")
-        }
+    // wait 4 seconds before next part
+    setTimeout(() => {
+      nameBox.forEach((name) => {
+        name.addEventListener("mouseover", () => {
+          mouseCursor.classList.add("cursor-grow")
+          for (let i = 0; i < nameBox.length; i++) {
+            nameBox[i].classList.add("hovered-card")
+          }
+        });
+        name.addEventListener("mouseleave", () => {
+          mouseCursor.classList.remove("cursor-grow")
+          for (let i = 0; i < nameBox.length; i++) {
+            nameBox[i].classList.remove("hovered-card")
+          }
+        })
       })
-    })
+    }, 3000)
+    
 
   }
 

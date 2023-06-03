@@ -127,7 +127,7 @@ body {
 .cursor {
   pointer-events: none;
   position: fixed;
-  padding: 0.0rem;
+  padding: 0.1rem;
   border-radius: 50%;
   mix-blend-mode: difference;
   transition: transform 0.2s ease;
@@ -158,4 +158,5 @@ body {
   color: rgb(28, 231, 218);
   stroke:rgb(28, 231, 218);
   fill:rgb(28, 231, 218);
+  transition: all 1s ease;
 }
