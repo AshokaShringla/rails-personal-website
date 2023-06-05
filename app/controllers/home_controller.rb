@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   end
 
   def experience
+    render layout: false
   end
 
 end

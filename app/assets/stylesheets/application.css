@@ -154,9 +154,57 @@ body {
     0 0 140px 60px rgb(213, 69, 69); /* outer cyan */
 }
 
-.hovered-card {
+.hovered-text {
   color: rgb(28, 231, 218);
   stroke:rgb(28, 231, 218);
   fill:rgb(28, 231, 218);
-  transition: all 1s ease;
+  transition: all 0.3s ease;
 }
+
+.hovered-removal-text {
+  color: #fff;
+  stroke: #fff;
+  fill: #fff;
+  transition: all 0.5s ease;
+}
+
+.hovered-card {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.not-hovered-card {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.pushed-up-card {
+  transform: translateY(-15px) scaleY(0.95);
+  transition: all 0.5s ease;
+}
+
+.pushed-up-removal-card {
+  transform: translateY(0px) scaleY(1);
+  transition: all 0.3s ease;
+}
+
+.pushed-down-middle-card {
+  transform: translateY(30px) scaleY(0.95);
+  transition: all 0.7s ease;
+}
+
+.pushed-up-middle-card {
+  transform: translateY(-30px) scaleY(0.95);
+  transition: all 0.7s ease;
+}
+
+.pushed-down-card {
+  transform: translateY(15px) scaleY(0.95);
+  transition: all 0.5s ease;
+}
+
+.pushed-down-removal-card {
+  transform: translateY(0px) scaleY(1);
+  transition: all 0.3s ease;
+}
+
